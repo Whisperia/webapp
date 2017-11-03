@@ -1,0 +1,13 @@
+﻿* {
+	box-sizing: border-box;
+}
+.panel-primary {
+	border-color: gray;
+	border-radius: 0px;
+	padding-top: 7%;
+	padding-bottom: 5%;
+}
+.text-info {
+	margin-top: 5%;
+	font-weight: bold;
+}
