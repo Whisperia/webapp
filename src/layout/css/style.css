@@ -1,13 +1,131 @@
 ﻿* {
 	box-sizing: border-box;
 }
-.panel-primary {
-	border-color: gray;
-	border-radius: 0px;
-	padding-top: 7%;
-	padding-bottom: 5%;
+body {
+	background: #f8f8f8;
 }
-.text-info {
+
+
+/* Navbar */
+
+
+
+
+.navbar {
+	overflow: auto;
+	margin: 0 0.5%;
+	padding: 0 5%;
+	background: #ffffff;
+}
+.navbar h2, .navbar h3, .navbar .list-group {
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1.42857143; 
+}
+.navbar .list-group-item {
+	padding-left: 0px;
+	border: none;
+	border-radius: 0px;
+}
+.navbar .list-group-item:last-child {
+	border-bottom: 3px solid #dcdcdc;
+	paddin-bottom: 60px !important;
+}
+.navbar .glyphicon {
+	margin-right: 10px;
+}
+.navbar .seller_icon{
+	margin-right: 0px;
+	float: right;
+	background: #f8f8f8;
+	text-align: center;
+	width: 30px;
+	height: 30px
+	font-size: 30px;
+	line-height: 1.7em;
+	border-radius: 50%;
+}
+
+
+
+/* Main Contetn Wrap */
+.content {
+	overflow: auto;
+	background: #ffffff;
+	margin: 0 5% 0 0;
+}
+.content #header {
+	margin: 0px;
+	padding: 0px;
+}
+.content .jumbotron {
+	background: #f8f8f8;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+/* navbar tab */
+.content .nav li a{
+	color: #555;
+	font-size: 17px;
+}
+.content .nav li a:hover{
+	color: #007dc6;
+}
+.content .nav li.active > a {
+	border: none;
+	border-bottom: 1px solid #007dc6;
+	color: #007dc6;
+}
+.content .nav li.active > a:hover {
+	border: none;
+	border-bottom: 1px solid #007dc6;
+	color: #007dc6;
+	background-color: #eee;
+}
+
+.content .list-inline {
 	margin-top: 5%;
+	margin-bottom: 3%;
+	margin-left: 1%;
+}
+.content .list-inline a{
+	color: #555;
+	font-size: 17px;
+}
+.content .list-inline li.active a{
+	color: #007dc6;
+}
+
+/* template miniatures */
+
+.content div.panel.panel-primary {
+	border: 1px solid #ddd;
+	border-radius: 0px;
+	padding-top: 15px;
+}
+.content div.panel.panel-primary p{
+	margin-top: 20px;
 	font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

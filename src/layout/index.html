@@ -1,17 +1,97 @@
 ﻿<!DOCTYPE html>
 <html lang="pl">
   <head>
-    <title>Sklep</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Main</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
+</head>
+<body>
+  
+<div class="container-fluid">
+	<div class="row">
+	<!-- Navbar -->
+		<div class="col-md-2">
+		<div class="navbar">
+		<h2>Seller Dashboard</h2>
+		
+			
+			<div class="list-group">
+				<a href="#" class="list-group-item">SELLER<span class="seller_icon glyphicon glyphicon glyphicon-option-vertical"></span></a>
+			</div> 
+		
+		
+			<h3>Quick Filters</h3>
+			<div class="list-group">
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-home"></span>Dashboard</a>
+			</div> 
+			<h3>Shop</h3>
+			<div class="list-group">
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-briefcase"></span>Manage Shop</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-shopping-cart"></span>View Shop</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-th-large"></span>My products</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-cloud-download"></span>Inventory Update</a>
+			</div>
+			<h3>Sales</h3>
+			<div class="list-group">
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-stats"></span>Sales</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-file"></span>Cancellation Requests</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-transfer"></span>Order Return Requests</a>
+			</div> 	
+			<h3>Settings</h3>
+			<div class="list-group">
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-usd"></span>Tax Category</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-modal-window"></span>Options</a>
+			</div> 
+			<h3>Profile</h3>
+			<div class="list-group">
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-user"></span>My Account</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span>Messages</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-credit-card"></span>My Credits</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-lock"></span>Change Password</a>
+				<a href="#" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span>Change Email</a>
+			</div>
+			</div>
+		</div>
+	<!-- End of Navbar -->
+	<!-- Main content -->
+		<div class="col-md-10">
+			<div class="content">
+			
+				<div id="header" class="container-fluid">
+					<div class="jumbotron">
+						<h2>Shop Details</h2>
+					</div>
+				</div>
+				
+				
+				
+			<div class="container-fluid">
+				<div class="row bg-white">
+					<div class="col-md-12 bg-white">
+					
+					
+					<h3>Shop Setup</h3>
+					
+					<ul class="menu nav nav-tabs">
+						<li><a href="#">General</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Arabic</a></li>
+						<li class="active"><a href="#">Layout</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Collection</a></li>
+					</ul>
+					
+					 <ul class="list-inline">
+						<li class="active"><a href="#">Template</a></li>
+						<li><a href="#">Theme Color</a></li>
+					</ul>
+					
+					<!-- template miniatures -->
+					
 
         <div class="col-md-3 col-sm-6">
           <div class="panel panel-primary">
@@ -49,13 +129,18 @@
         </div>
 
 
-      </div>
-    </div>
-
-
-
-
-
-    <script src="script.js"></script>
-  </body>
+		
+					
+					<!-- end of template miniatures -->
+					
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	<!-- End of Main content -->
+	</div>
+</div>
+   
+</body>
 </html>
