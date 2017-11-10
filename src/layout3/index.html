@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Layout 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Small logo + Search + Login -->
+<div class="col-md-12">
+				
+	<div class="mainhead">
+		<div class="top-head">
+			<div class="fixed-container">
+				<a href="javascript:void(0)" class="navs_toggle"><span></span></a>
+				<div id="logo">
+					<a href="/"> 
+						<span class="medium-logo"><img src="img/whisperia_logo_color.png" alt="Whisperia."/></span> 
+					</a> 
+				</div>
+
+				<!-- mobile-element -->
+
+          <div class="right-side" id="list_ct_5">
+            <div id="search">
+                <div id="validationsummary_frmSiteSearch"></div>
+					<form method="post" action="/-/products/search" name="frmSiteSearch" id="frmSiteSearch" class="frmSearch" autocomplete="off">
+						<table  width="100%" border="0" class="tableform">
+							<tr>
+								<td></td>
+								<td>
+									<input type="text" name="keyword" id="search_keyword" value="" Placeholder="Szukaj produktu" title="" />
+									<select name="category"  title="" id="" >
+											<option value="">Wszystkie</option>
+											<option value="26" >Electronics</option>
+											<option value="251" >Cars</option>
+											<option value="37" >Entertainment</option>
+											<option value="38" >Fashion</option>
+											<option value="39" >Home</option>
+											<option value="40" >Sports</option>
+											<option value="41" >Art &amp; Collectables</option>
+											<option value="241" >Books &amp; Media</option>
+											<option value="242" >Baby &amp; Kids</option>
+									</select>
+									<input type="submit" name="search_submit" id="btn_submit" title="" value="" />
+								</td>
+							</tr>
+						</table>
+					</form>
+					<!-- script -->
+				<a class="btn  primary-btn" href="/user/account">Login</a> 
+				<span class="or">lub</span> 
+				<a class="btn secondary-btn" href="/user/account">SIGN UP</a>
+            </div>
+                         
+			<div id="cart"> 
+						 <a href="javascript:void(0)" id="cart_summary" class="click_trigger" ><i class="svg-icn">
+							<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									width="70px" height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+									<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff3a59" d="M70.1,11.7h-7l-7,21H25.7l-7-23.3c0,0-2.8-9.2-7-9.3h-7
+										c0,0-5.5,1.9-4.7,4.7c0,0,0.3,6.7,9.3,2.3l11.7,35h39.6L70.1,11.7z"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff3a59" d="M29.2,46.3c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8
+										s-5.8-2.6-5.8-5.8C23.4,49,26,46.3,29.2,46.3z"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff3a59" d="M52.4,46.3c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8
+										s-5.8-2.6-5.8-5.8C46.5,49,49.2,46.3,52.4,46.3z"/>
+							</svg>
+              </i><span class="item_click_trigger" id="cart-total"><strong>Koszyk</strong> <span class="count_cart_items">0</span> produkt(y) </span> </a>
+              <ul id="list_cart_summary" class="dropdown-menu pull-right cart-drop">
+                                </ul>
+            </div>
+        </div>
+			</div>
+        </div>
+    </div>
+				
+</div>
+<!-- End of Search + Login -->
+
+<!-- Logo -->
+		<div class="col-sm-2 col-sm-offset-5">
+			 <div class="brand-icon">
+				<div class="brand-wrap">
+					<img src="img/THUMB.png" alt="WHS_shop"/>
+				</div>
+             </div>
+		</div>
+<!-- End of Logo -->
+
+<!-- Menu -->
+		<div class="col-md-12">
+			<div class="navpanel">
+				<div class="fixed-container">
+						<ul class="horizontal_links navigations">
+                                   <li > <a href="/-/category/view/38">Fashion</a> </li>
+                                   <li > <a href="/-/category/view/39">Home</a> </li>
+                        </ul>
+				</div>
+			</div>
+		</div>
+<!-- End of Menu -->
+<!-- Big Picture -->
+	
+		<div class="col-md-12">
+				 <div class="fixed-container">
+					<div class="shop-header" >
+						<div class="img"><img src="img/LARGE.jpeg"  alt="WHS_shop"/></div>
+					</div>
+				 </div>
+		</div>
+	
+<!-- End of Big Picture -->
+<div class="row">
+<!-- Products Search -->
+	
+		<div class="col-md-3">
+				
+				       	  <div class="fixed__panel">
+<div class="left-panel gray-side" id="fixed__panel">
+			            <div class="left-nav">
+              	<div class="boxRound">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Shop Sections</h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="listscroll">
+                    <ul class="labelList">
+                                            	<li><a href="/whs-shop/shops/view/3/38">Fashion (2)</a></li>
+                                         </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        
+                        <div class="panelLeft left_section">
+              
+            <div id="price_range_box" class="resp_price_range_filter">
+              	              	<div class="boxRound box_price_range">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Cena <span>(zł)</span></h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="filter-content">
+                    <div class="space-lft-right-low marginTop"><div id="slider" class="price_range_slider"></div></div>
+                    <div class="prices"></div>
+                    <!--<div class="prices"> <span class="from-price-text">Rs 215</span> <span class="to-price-text">Rs 61203</span> </div>-->
+                    <div class="clear"></div>
+                    <div class="price-input">
+                      <div class="price-text-box">
+                        <input class="input-filter form-control" readonly="readonly" data-index="0" min="99" max="199" value="99">
+                        </div>
+                    </div>
+                    <span class="dash"> - </span>
+                    <div class="price-input">
+                      <div class="price-text-box">
+                        <input class="input-filter form-control" readonly="readonly" data-index="1" min="99" max="199" value="199">
+                        </div>
+                    </div>
+                    </div>
+                  <div class="clearlink"> <a href="#" class="clear_price">Clear</a> </div>
+                </div>
+              </div>
+                            </div>
+              
+                	
+                          <div class="boxRound">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Condition</h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="listscroll">
+                    <ul class="labelList">
+	                                        <li>
+                        <label><span class="span1">
+                          <input class="condition" name="condition[]" type="checkbox" value="N" >
+                          </span><span class="span2">New</span></label>
+                      </li>
+                                            <li>
+                        <label><span class="span1">
+                          <input class="condition" name="condition[]" type="checkbox" value="U" >
+                          </span><span class="span2">Used</span></label>
+                      </li>
+                                            <li>
+                        <label><span class="span1">
+                          <input class="condition" name="condition[]" type="checkbox" value="R" >
+                          </span><span class="span2">Refurbished</span></label>
+                      </li>
+                                          </ul>
+                  </div>
+                  <div class="clearlink"> <a href="javascript:void(0)" class="clear_all">Clear All</a> </div>
+                </div>
+              </div>
+                            <div class="boxRound">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Availability</h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="listscroll">
+                    <ul class="labelList">
+                      <li>
+                        <label><span class="span1">
+                          <input class="out_of_stock" name="out_of_stock" type="checkbox" value="1">
+                          </span><span class="span2">Exclude out of stock</span></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        
+            
+            
+            
+            
+            <div class="widget">
+              <ul class="left-listing">
+                <li><a href="/whs-shop/shops/send_message/3">Send Message</a></li>
+               
+                <li><a href="/whs-shop/shops/report/3">Report this shop to Whisperia.</a></li>
+                <li><a href="/whs-shop/shops/policies/3">Policies</a></li>
+              </ul>
+            </div>
+                          <div class="review-wrapper">	
+              <a href="/whs-shop/shops/reviews/3">Review(s) </a>
+              <div class="reviewlist">
+                <ul class="rating">
+                  	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                  
+                </ul>
+                <p>0.0 out of 5</p>
+              </div>
+              </div>
+                         </div>
+         </div>   
+				
+		</div>
+<!-- End of Products Search -->		
+<!-- Products -->
+	
+		<div class="col-md-9">
+				
+				<div class="right-panel">
+          	            
+            <div class="shop-list clearfix">
+	                <span id="products-list"></span>
+					
+					 <div class="col-md-4">
+						<div class="panel panel-primary">
+							<img src="img/sukienka.jpeg" class="img-responsive" style="width:100%" alt="Sklep 5">
+							<p class=" text-danger text-center">99 zł</p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="panel panel-primary">
+							<img src="img/sukienka.jpeg" class="img-responsive" style="width:100%" alt="Sklep 5">
+							<p class=" text-danger text-center">99 zł</p>
+						</div>
+					</div> 
+					
+            </div>
+				
+		</div>
+	
+<!-- End of Products -->
+</div>
+<!-- Footer -->
+		
+		<div class="col-md-12 ">
+				<footer class="footer clearfix">
+				      <div class="desktop-footer">
+							<div class="ft-top clearfix">
+							<div class="fixed-container">
+							<div class="ft-section clearfix">
+							<div class="f-cell first">
+							<div class="f-logo">
+
+                                    	<img src="img/whisperia_logo_color.png" alt="Whisperia."/>
+                                      <p class="copyright "><span style="display: inline !important;">All Rights Reserved.</span> © 2017 Whisperia.com                  </p>
+                                  </div>
+							</div>
+                            <div class="f-cell cl-effect-21 ">
+							<h3>Wsp&oacute;łpraca</h3>
+														<ul>
+                               		                    <li><a target="_self" href="/affiliate">Program Affiliacyjny</a></li>
+                    					            		                    <li><a target="_self" href="/faqs">FAQs</a></li>
+                    					            		                    <li><a target="_self" href="/user/advertise">Reklama w Whisperia.</a></li>
+                    					            		                    <li><a target="_self" href="/testimonials">Rekomendacje</a></li>
+                    					            		                    <li><a target="_self" href="/offers">Oferty Specjalne</a></li>
+                    					                </ul>
+							</div>
+                            <div class="f-cell cl-effect-21 ">
+							<h3>Droga do Sklepu</h3>
+														<ul>
+                               		                    <li><a target="_self" href="/products">Wszystkie Produkty</a></li>
+                    					            		                    <li><a target="_self" href="/products/featured">Wyr&oacute;żnione Produkty</a></li>
+                    					            		                    <li><a target="_self" href="/products/top_50">Top 50</a></li>
+                    					            		                    <li><a target="_self" href="/shops/featured">Wyr&oacute;żnione Sklepy</a></li>
+                    					            		                    <li><a target="_self" href="/products/new_stuff">Nowości</a></li>
+                    					                </ul>
+							</div>
+                            <div class="f-cell cl-effect-21 ">
+							<h3>Przydatne Linki</h3>
+														<ul>
+                               		                    <li><a target="_self" href="/polityka-prywatnosci-whisperia/cms/view/9">Polityka Prywatności</a></li>
+                    					            		                    <li><a target="_self" href="/regulamin-serwisu-whisperia/cms/view/10">Regulamin Serwisu</a></li>
+                    					            		                    <li><a target="_self" href="/polityka-cookies/cms/view/11">Polityka Plik&oacute;w &quot;Cookies&quot;</a></li>
+                    					                </ul>
+							</div>
+                            <div class="f-cell cl-effect-21 ">
+							<h3>Whisperia.</h3>
+														<ul>
+                               		                    <li><a target="_self" href="/custom/contact_us">Kontakt</a></li>
+                    					            		                    <li><a target="_self" href="/blog">Blog</a></li>
+                    					            		                    <li><a target="_self" href="/-/cms/view/4">O Nas</a></li>
+                    					            		                    <li><a target="_self" href="/custom/sitemap">Sitemap</a></li>
+                    					                </ul>
+							</div>
+              
+							
+            </div>
+          </div>
+        </div>
+        
+      </div>
+	  </div>
+				
+		</div>
+		
+<!-- End of Footer -->
+</div>
+
+  
+
+</body>
+</html> 
