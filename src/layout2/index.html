@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Layout 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Small logo + Search + Login -->
+<div class="col-md-12">
+
+	  <header class="header">
+		<div class="mainhead">
+		<div class="top-head">
+        <div class="fixed-container">
+					<a href="javascript:void(0)" class="navs_toggle"><span></span></a>
+                    <div id="logo">
+						<a href="/">
+							<span class="small-logo">
+								<img src="img/whisperia_logo_color.png" alt="Whisperia."/>
+							</span> 
+							<span class="medium-logo">
+								<img src="img/whisperia_logo_color.png" alt="Whisperia."/>
+							</span> 
+						</a> 
+					</div>
+
+
+        <!--  <div class="mobile-element"> ...  </div> -->
+
+
+          <div class="right-side" id="list_ct_5">
+            <div id="search">
+                <div id="validationsummary_frmSiteSearch"></div>
+				
+				<form method="post" action="/-/products/search" name="frmSiteSearch" id="frmSiteSearch" class="frmSearch" autocomplete="off">
+					<table class="tableform">
+						<tr>
+							<td></td>
+							<td>
+								<input type="text" name="keyword" id="search_keyword" value="" Placeholder="Szukaj produktu" title="" />
+									<select name="category"  title="" id="" >
+										<option value="">Wszystkie</option>
+										<option value="26" >Electronics</option>
+										<option value="251" >Cars</option>
+										<option value="37" >Entertainment</option>
+										<option value="38" >Fashion</option>
+										<option value="39" >Home</option>
+										<option value="40" >Sports</option>
+										<option value="41" >Art &amp; Collectables</option>
+										<option value="241" >Books &amp; Media</option>
+										<option value="242" >Baby &amp; Kids</option>
+									</select>
+									<input type="submit" name="search_submit" id="btn_submit" title="" value="" />
+							</td>
+						</tr>				
+					</table>
+				</form>
+
+				<!-- <script> ... </script> -->                        
+
+				<a class="btn  primary-btn" href="/user/account">Login</a> 
+				<span class="or">lub</span> 
+				<a class="btn secondary-btn" href="/user/account">SIGN UP</a>
+				
+            </div>
+			
+            <div id="cart"> 
+				<a href="javascript:void(0)" id="cart_summary" class="click_trigger" >
+					<i class="svg-icn">
+						<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="70px" height="70px" viewBox="0 0 70 70" enable-background="new 0 0 70 70" xml:space="preserve">
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff3a59" d="M70.1,11.7h-7l-7,21H25.7l-7-23.3c0,0-2.8-9.2-7-9.3h-7
+							c0,0-5.5,1.9-4.7,4.7c0,0,0.3,6.7,9.3,2.3l11.7,35h39.6L70.1,11.7z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff3a59" d="M29.2,46.3c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8
+							s-5.8-2.6-5.8-5.8C23.4,49,26,46.3,29.2,46.3z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="#ff3a59" d="M52.4,46.3c3.2,0,5.8,2.6,5.8,5.8c0,3.2-2.6,5.8-5.8,5.8
+							s-5.8-2.6-5.8-5.8C46.5,49,49.2,46.3,52.4,46.3z"/>
+						</svg>
+					</i>
+				<span class="item_click_trigger" id="cart-total">
+					<strong>Koszyk</strong> 
+					<span class="count_cart_items">0</span> produkt(y) 
+				</span> 
+			 
+				</a>
+			
+              <ul id="list_cart_summary" class="dropdown-menu pull-right cart-drop"></ul>
+			  
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </header>	
+
+</div>
+
+
+
+
+<!-- End of Search + Login -->
+
+
+
+<!-- Logo -->
+		<div class="col-md-3">
+			 <div class="brand-icon">
+				<div class="brand-wrap">
+					<img src="img/THUMB.png" alt="WHS_shop"/>
+				</div>
+             </div>
+		</div>
+		
+		
+		
+		<div class="col-md-5 col-md-offset-4">
+			<div style="background: #F5F5F5; height: 80px; border: solid 1px #dddede; margin-top: 29%;">
+				&nbsp;
+			</div>
+		</div>
+		
+<!-- End of Logo -->
+
+<!-- Menu -->
+<div class="col-md-12">
+	<div class="navpanel">
+		<div class="fixed-container">
+			<ul class="horizontal_links navigations">
+				<li > <a href="/-/category/view/38">Fashion</a> </li>
+                <li > <a href="/-/category/view/39">Home</a> </li>
+            </ul>
+		</div>
+    </div>
+</div>  
+<!-- End of Menu -->
+
+<!-- Big Picture -->
+	
+		<div class="col-md-12">
+				 <div class="fixed-container">
+					<div class="shop-header" >
+						<div class="img"><img src="img/LARGE.jpeg"  alt="WHS_shop"/></div>
+						
+			<!-- ......................................................... -->
+						
+					</div>
+				 </div>
+		</div>
+	
+<!-- End of Big Picture -->
+
+<div class="container-fluid">
+<div class="row">
+
+
+	<!-- Products Search -->
+	<div class="col-md-3">
+			<div class="left-panel gray-side" id="fixed__panel">
+			    <div class="left-nav">
+					<div class="boxRound">
+						<div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+							<h4>Shop Sections</h4>
+						</div>
+						<div class="box_Middle toggleWrap">
+							<div class="listscroll">
+								<ul class="labelList">
+                                    <li><a href="/whs-shop/shops/view/3/38">Fashion (2)</a></li>
+                                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+                        
+                        <div class="panelLeft left_section">
+              
+            <div id="price_range_box" class="resp_price_range_filter">
+              	              	<div class="boxRound box_price_range">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Cena <span>(zł)</span></h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="filter-content">
+                    <div class="space-lft-right-low marginTop"><div id="slider" class="price_range_slider"></div></div>
+                    <div class="prices"></div>
+                    <!--<div class="prices"> <span class="from-price-text">Rs 215</span> <span class="to-price-text">Rs 61203</span> </div>-->
+                    <div class="clear"></div>
+                    <div class="price-input">
+                      <div class="price-text-box">
+                        <input class="input-filter form-control" readonly="readonly" data-index="0" min="99" max="199" value="99">
+                        </div>
+                    </div>
+                    <span class="dash"> - </span>
+                    <div class="price-input">
+                      <div class="price-text-box">
+                        <input class="input-filter form-control" readonly="readonly" data-index="1" min="99" max="199" value="199">
+                        </div>
+                    </div>
+                    </div>
+                  <div class="clearlink"> <a href="#" class="clear_price">Clear</a> </div>
+                </div>
+              </div>
+                            </div>
+              
+                	
+                          <div class="boxRound">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Condition</h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="listscroll">
+                    <ul class="labelList">
+	                                        <li>
+                        <label><span class="span1">
+                          <input class="condition" name="condition[]" type="checkbox" value="N" >
+                          </span><span class="span2">New</span></label>
+                      </li>
+                                            <li>
+                        <label><span class="span1">
+                          <input class="condition" name="condition[]" type="checkbox" value="U" >
+                          </span><span class="span2">Used</span></label>
+                      </li>
+                                            <li>
+                        <label><span class="span1">
+                          <input class="condition" name="condition[]" type="checkbox" value="R" >
+                          </span><span class="span2">Refurbished</span></label>
+                      </li>
+                                          </ul>
+                  </div>
+                  <div class="clearlink"> <a href="javascript:void(0)" class="clear_all">Clear All</a> </div>
+                </div>
+              </div>
+                            <div class="boxRound">
+                <div class="boxTop"><a href="javascript:void(0)" class="openToggle toggleLink"></a>
+                  <h4>Availability</h4>
+                </div>
+                <div class="box_Middle toggleWrap">
+                  <div class="listscroll">
+                    <ul class="labelList">
+                      <li>
+                        <label><span class="span1">
+                          <input class="out_of_stock" name="out_of_stock" type="checkbox" value="1">
+                          </span><span class="span2">Exclude out of stock</span></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        
+            
+            
+            
+            
+            <div class="widget">
+              <ul class="left-listing">
+                <li><a href="/whs-shop/shops/send_message/3">Send Message</a></li>
+               
+                <li><a href="/whs-shop/shops/report/3">Report this shop to Whisperia.</a></li>
+                <li><a href="/whs-shop/shops/policies/3">Policies</a></li>
+              </ul>
+            </div>
+                          <div class="review-wrapper">	
+              <a href="/whs-shop/shops/reviews/3">Review(s) </a>
+              <div class="reviewlist">
+                <ul class="rating">
+                  	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                	
+                    <li class="in-active"> 
+                    <svg xml:space="preserve" enable-background="new 0 0 70 70" viewBox="0 0 70 70" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
+                     <g>
+                        <path d="M51,42l5.6,24.6L35,53.6l-21.6,13L19,42L0,25.4l25.1-2.2L35,0l9.9,23.2L70,25.4L51,42z M51,42" 
+                         fill="#474747" />
+                     </g>
+                </svg> </li>
+                  
+                </ul>
+                <p>0.0 out of 5</p>
+              </div>
+              </div>
+                         </div>
+	
+	</div>
+	<!-- End of Products Search -->		
+	<!-- Products -->
+	<div class="col-md-9 no-padding">
+	
+			<div class="right-panel">
+          	            
+            <div class="shop-list clearfix">
+	                <span id="products-list">
+					
+					 
+					 <!-- Product 1 -->
+					 
+					 <div class="col-md-4">
+						
+						<div data-attr-id="" class="shop-item" itemscope="" itemtype="http://schema.org/Product">
+
+							<div class="image">
+								<a itemprop="url" class="ppc_promotion_click" href="/sukienka-big-spring/products/view/3">
+									<img class="img-responsive" src="img/sukienka.jpeg" alt="Sukienka Big Spring">
+								</a>
+							</div>
+
+						<div class="caption"> 
+							<span class="name product-name-red"> 
+								<a itemprop="url" class="ppc_promotion_click" href="/sukienka-big-spring/products/view/3">
+									<div itemprop="name">
+										Sukienka Big Spring
+									</div>
+								</a>
+							</span>
+							<div itemprop="manufacturer" itemscope="" itemtype="http://schema.org/Organization"> 
+								<span class="brand-name">
+									<div itemprop="name">
+										<a itemprop="url" href="/whs-shop/shops/view/3">
+											WHS_shop
+										</a>
+									</div>
+								</span>
+							</div>
+						</div>
+
+						<div class="price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+							<span class="price-new" itemprop="price">99.00zł</span>
+						</div>
+						
+						
+
+					</div>
+						
+					</div>
+
+					<!-- Product 2 -->
+					
+					<div class="col-md-4">
+						
+						<div data-attr-id="" class="shop-item" itemscope="" itemtype="http://schema.org/Product">
+
+							<div class="image">
+								<a itemprop="url" class="ppc_promotion_click" href="/sukienka-big-spring/products/view/3">
+									<img class="img-responsive" src="img/sukienka2.jpeg" alt="Sukienka Big Spring">
+								</a>
+							</div>
+
+						<div class="caption"> 
+							<span class="name product-name-red"> 
+								<a itemprop="url" class="ppc_promotion_click" href="/sukienka-big-spring/products/view/3">
+									<div itemprop="name">
+										Sukienka Big Spring
+									</div>
+								</a>
+							</span>
+							<div itemprop="manufacturer" itemscope="" itemtype="http://schema.org/Organization"> 
+								<span class="brand-name">
+									<div itemprop="name">
+										<a itemprop="url" href="/whs-shop/shops/view/3">
+											WHS_shop
+										</a>
+									</div>
+								</span>
+							</div>
+						</div>
+
+						<div class="price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+							<span class="price-new" itemprop="price">199.00zł</span>
+						</div>
+						
+						
+
+					</div>
+						
+					</div>
+					
+					<!-- Product 3 -->
+					 
+					 <div class="col-md-4 no-padding">
+						
+						<div data-attr-id="" class="shop-item" itemscope="" itemtype="http://schema.org/Product">
+
+							<div class="image">
+								<a itemprop="url" class="ppc_promotion_click" href="/sukienka-big-spring/products/view/3">
+									<img class="img-responsive" src="img/sukienka.jpeg" alt="Sukienka Big Spring">
+								</a>
+							</div>
+
+						<div class="caption"> 
+							<span class="name product-name-red"> 
+								<a itemprop="url" class="ppc_promotion_click" href="/sukienka-big-spring/products/view/3">
+									<div itemprop="name">
+										Sukienka Big Spring
+									</div>
+								</a>
+							</span>
+							<div itemprop="manufacturer" itemscope="" itemtype="http://schema.org/Organization"> 
+								<span class="brand-name">
+									<div itemprop="name">
+										<a itemprop="url" href="/whs-shop/shops/view/3">
+											WHS_shop
+										</a>
+									</div>
+								</span>
+							</div>
+						</div>
+
+						<div class="price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+							<span class="price-new" itemprop="price">99.00zł</span>
+						</div>
+						
+						
+
+					</div>
+						
+					</div>
+					
+					
+					</span>
+					
+            </div>
+				
+		</div>
+	
+	</div>
+	<!-- End of Products -->
+	
+	
+
+
+	
+</div>
+</div>
+
+<!-- Footer -->
+		
+<div class="col-md-12 ">
+				
+	 <footer class="footer clearfix">
+      <div class="desktop-footer">
+        <div class="ft-top clearfix">
+          <div class="fixed-container">
+            <div class="ft-section clearfix">
+              <div class="f-cell first">
+                
+				<div class="f-logo">
+                    <img src="img/whisperia_logo_color.png" alt="Whisperia."/>
+                    <p class="copyright ">
+						<span style="display: inline !important;">All Rights Reserved.</span> © 2017 Whisperia.com
+					</p>
+                </div>
+              </div>
+			  
+              <div class="f-cell cl-effect-21 ">
+                <h3>Wsp&oacute;łpraca</h3>
+                <ul>
+                    <li><a target="_self" href="/affiliate">Program Affiliacyjny</a></li>
+                    <li><a target="_self" href="/faqs">FAQs</a></li>
+                    <li><a target="_self" href="/user/advertise">Reklama w Whisperia.</a></li>
+                    <li><a target="_self" href="/testimonials">Rekomendacje</a></li>
+                    <li><a target="_self" href="/offers">Oferty Specjalne</a></li>
+                </ul>
+              </div>
+			  
+              <div class="f-cell cl-effect-21 ">
+                <h3>Droga do Sklepu</h3>
+                <ul>
+					<li><a target="_self" href="/products">Wszystkie Produkty</a></li>
+					<li><a target="_self" href="/products/featured">Wyr&oacute;żnione Produkty</a></li>
+					<li><a target="_self" href="/products/top_50">Top 50</a></li>
+					<li><a target="_self" href="/shops/featured">Wyr&oacute;żnione Sklepy</a></li>
+					<li><a target="_self" href="/products/new_stuff">Nowości</a></li>
+                </ul>
+              </div>
+                            
+			  <div class="f-cell cl-effect-21 ">
+                <h3>Przydatne Linki</h3>
+                <ul>
+                    <li><a target="_self" href="/polityka-prywatnosci-whisperia/cms/view/9">Polityka Prywatności</a></li>
+                    <li><a target="_self" href="/regulamin-serwisu-whisperia/cms/view/10">Regulamin Serwisu</a></li>
+                     <li><a target="_self" href="/polityka-cookies/cms/view/11">Polityka Plik&oacute;w &quot;Cookies&quot;</a></li>
+                 </ul>
+              </div>
+			  
+              <div class="f-cell cl-effect-21 ">
+                <h3>Whisperia.</h3>
+                <ul>
+                    <li><a target="_self" href="/custom/contact_us">Kontakt</a></li>
+                    <li><a target="_self" href="/blog">Blog</a></li>
+                    <li><a target="_self" href="/-/cms/view/4">O Nas</a></li>
+                    <li><a target="_self" href="/custom/sitemap">Sitemap</a></li>
+                </ul>
+              </div>
+              
+              <div class="f-cell social">
+                <h3>Keep in Touch</h3>
+                <ul>
+					<li><a href="https://www.facebook.com/Whisperia-1269482979865220/" target="_blank"><img src="img/social_platform_icon/fb.svg" alt="Facebook"/></a></li>
+					<li><a href="https://pl.pinterest.com/whisperia_official/" target="_blank"><img src="img/social_platform_icon/349344_pinterest.svg" alt="Facebook"/></a></li>
+					<li><a href="https://www.instagram.com/whisperia_official/" target="_blank"><img src="img/social_platform_icon/386723_instagram-logo.svg" alt="Facebook"/></a></li>
+					<li><a href="https://www.youtube.com/channel/UCAb1ri3dkPCBLwwHwcFg3vA" target="_blank"><img src="img/social_platform_icon/589313_yt.svg" alt="Facebook"/></a></li>
+					<li><a href="https://twitter.com/whisperia_com" target="_blank"><img src="img/social_platform_icon/137590_tw.svg" alt="Facebook"/></a></li>
+					<li><a href="https://aboutme.google.com/b/103417605115479333847/" target="_blank"><img src="img/social_platform_icon/495666_google.svg" alt="Facebook"/></a></li>
+                </ul>
+              </div>
+			  
+            </div>
+          </div>
+        </div>
+        <div class="ft-bttm clearfix">
+          <div class="fixed-container">
+
+        <div class="ft-bttm-left">
+            <div class="sign-up-form">
+                	<h4>
+						<div>
+							<span style="display: inline !important;">
+								<span style="display: inline !important;">Najlepsze Oferty Dla Ciebie</span>
+							</span>
+							<br>
+						</div>
+					</h4>
+	                
+					<p>
+						<span style="display: inline !important;">
+							Zapisz się na Newsletter | otrzymasz kupony promocyjne oraz informacje o  
+							<strong></span><span style="display: inline !important;">najnowszych trendach</span><span style="display: inline !important;"></strong> oraz ekskluzywnych </span><span style="display: inline !important;"><strong></span><span style="display: inline !important;">promocjach</span><span style="display: inline !important;"></strong> </span><br></p>
+        	      	
+					<form method="post" action="/common/subscribe" name="subscribeNewsletter" id="subscribeNewsletter" class="newsletter-form" rel="newsletter" validator="newsletterFrmValidator">
+					<table width="100%">
+						<tr>
+							<td></td>
+							<td>
+								<input type="text" name="email" id="email" value=""  Title="Email Address" Placeholder="Your e-mail address" title="" />
+								<input type="submit" name="btn_submit" id="btn_submit" title="" value="Subscribe" />
+							</td>
+						</tr>
+					</table>
+					</form>
+
+                    <!-- <script type="text/javascript"> .... </script>  -->   
+
+					<span id="ajax_newsletter_message"></span>
+                	    <div class="clear"></div>
+               	 		<p></p>
+	                </div>
+	    </div>
+
+
+            <div class="ft-bttm-right">
+				<div class="contact-here">                
+					<div class="contact"> 
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="70px" viewbox="-364 606 70 70" enable-background="new -364 606 70 70" xml:space="preserve">                  
+						<g>                    
+							<path fill="#999999" d="M-329,606c-19.4,0-35,15.6-35,35s15.6,35,35,35s35-15.6,35-35C-294.1,621.6-309.8,606-329,606L-329,606z M-329,673.3c-18,0-32.4-14.5-32.4-32.2c0-17.8,14.4-32.4,32.4-32.4c17.8,0,32.4,14.4,32.4,32.4 C-296.8,658.8-311.2,673.3-329,673.3L-329,673.3z"></path>                  
+						</g>                  
+						<g>                    
+							<g>                      
+								<path fill="#999999" d="M-320.5,621.3h-17c-2,0-3.6,1.6-3.6,3.6v31.5c0,2,1.6,3.6,3.6,3.6h17c2,0,3.6-1.6,3.6-3.6V625 C-316.9,623-318.5,621.3-320.5,621.3L-320.5,621.3z M-333.8,623.1h9.7v1.2h-9.7V623.1z M-329,657.7c-1.3,0-2.4-1.1-2.4-2.4 s1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4S-327.7,657.7-329,657.7L-329,657.7z M-319.3,650.4h-19.4v-24.2h19.4 C-319.3,626.2-319.3,650.4-319.3,650.4z"></path>                    
+							</g>                  
+						</g>                  
+						</svg>
+						WHISPERIA APLIKACJA  <span class="under-txt"><a href="#">Pobierz Teraz</a></span>
+					</div> 
+					
+					<div class="contact"> 
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="70px" viewbox="-364 606 70 70" enable-background="new -364 606 70 70" xml:space="preserve">                  
+						<g>                    
+							<path fill="#999999" d="M-329,606c-19.4,0-35,15.6-35,35s15.6,35,35,35s35-15.6,35-35C-294.1,621.6-309.8,606-329,606L-329,606z M-329,673.3c-18,0-32.4-14.5-32.4-32.2c0-17.8,14.4-32.4,32.4-32.4c17.8,0,32.4,14.4,32.4,32.4 C-296.8,658.8-311.2,673.3-329,673.3L-329,673.3z"></path>                  
+						</g>                  
+							<path fill="#999999" d="M-333.4,633.3l-5.9-10.6c1.1-0.8,2.4-1.7,3.5-2.5c0.5-0.3,1.3-0.2,1.7,0.4l4.6,8.2c0.3,0.6,0.2,1.5-0.3,1.9 l-3,2.2C-333.1,633-333.3,633.2-333.4,633.3L-333.4,633.3z M-329.9,649c-1-1.5-1.9-3.1-2.9-4.8c-0.9-1.6-1.8-3.3-2.6-5 c-0.6-1.3-0.6-3.1,0.2-4.3l-6.1-10.9c-2.2,1.6-3,6.9-1.9,12c0.5,2.2,1.3,4.3,2,6.3c0.8,1.9,1.8,3.9,2.8,5.7c1,1.8,2.1,3.7,3.3,5.4 c1.3,1.7,2.6,3.3,4.1,4.8c3.6,3.4,8.2,4.8,10.4,3.2l-6.1-10.9C-327.6,650.8-329,650.2-329.9,649L-329.9,649z M-314.6,655.7l-4.6-8.2 c-0.3-0.6-1.1-0.8-1.7-0.4l-1.6,1.1l-1.5,1c-0.2,0.1-0.4,0.2-0.5,0.3l5.9,10.6c1.1-0.9,2.4-1.7,3.5-2.5 C-314.4,657.2-314.2,656.3-314.6,655.7L-314.6,655.7z"></path>                  
+						</svg>  
+						POMOC ? Zadzwoń<span class="under-txt"> +48 604 706 538</span>
+					</div>                
+					<div class="contact"> 
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="-270.3 362 70 70" style="enable-background:new -270.3 362 70 70;" xml:space="preserve"> 
+						<style type="text/css"> .st0{fill:#999999;} </style> 
+						<g> 
+							<path class="st0" d="M-235.3,362c-19.4,0-35,15.6-35,35s15.6,35,35,35s35-15.6,35-35C-200.4,377.6-216.1,362-235.3,362L-235.3,362z M-235.3,429.3c-18,0-32.4-14.5-32.4-32.2c0-17.8,14.4-32.4,32.4-32.4c17.8,0,32.4,14.4,32.4,32.4 C-203.1,414.8-217.5,429.3-235.3,429.3L-235.3,429.3z"></path> 
+						</g> 
+						<g> 
+							<g id="Shape_17"> 
+								<g> 
+								<path class="st0" d="M-213.4,386c0-1-0.4-1.8-1-2.5c0,0,0,0,0,0c0,0,0,0,0,0c-0.7-0.7-1.7-1.2-2.7-1.2h-37.5 c-1.1,0-2.1,0.5-2.7,1.2c0,0,0,0,0,0c0,0,0,0,0,0c-0.6,0.7-1,1.5-1,2.5V408c0,1,0.4,1.9,1,2.5c0,0,0,0,0,0c0,0,0,0,0,0 c0.7,0.7,1.7,1.1,2.7,1.1h37.5c1.1,0,2-0.4,2.7-1.1c0,0,0,0,0,0c0,0,0,0,0,0c0.6-0.7,1-1.6,1-2.5L-213.4,386L-213.4,386z M-228.2,395.8l13-10.8c0.1,0.3,0.2,0.6,0.2,0.9V408c0,0.3-0.1,0.6-0.2,0.8L-228.2,395.8z M-217.2,383.8c0.3,0,0.6,0.1,0.9,0.2 l-19.7,16.3l-19.7-16.3c0.3-0.1,0.6-0.2,0.9-0.2H-217.2z M-256.8,408.9c-0.1-0.3-0.2-0.5-0.2-0.8V386c0-0.3,0.1-0.6,0.2-0.9 l13,10.8L-256.8,408.9z M-254.8,410.2c-0.4,0-0.7-0.1-1-0.2l13.2-13.2l6.1,5c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2l6.1-5 l13.2,13.2c-0.3,0.2-0.6,0.2-1,0.2H-254.8L-254.8,410.2z"></path> 
+								</g> 
+							</g> 
+						</g> 
+						</svg>
+						NAPISZ  <span class="under-txt">[@]whisperia.com</span>
+					</div>              
+				</div>              
+				
+				<div class="clear"></div>
+                
+				<div class="ft-section payment-types clearfix">
+					<div class="cell fl"> <img src="img/payment-cards.png"  alt="Payment cards"/> </div>
+					<div class="cell fr"> <img src="img/secure.png"   alt="Secure Payments"/></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+				
+</div>
+		
+<!-- End of Footer -->
+
+
+
+
+</div>  
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
