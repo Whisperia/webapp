@@ -1,4 +1,16 @@
 ﻿$(document).ready(function(){
+	// progress bar 
+	
+	$(window).scroll(function() {
+
+		var documentHeight = $(document).height();
+		var windowHeight   = $(window).height();
+		var distanceToTop  = $(window).scrollTop();
+
+		var percentScrolled = distanceToTop/(documentHeight - windowHeight) * 100;
+		$('div.progress-bar').text(percentScrolled.toFixed(0) + '%');
+		$('div.progress-bar').css('width',percentScrolled.toFixed(0) + '%');
+		});
 	
 	//slide
 	$(window).scroll(function() {
