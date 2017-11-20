@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+<body>
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<div class="bootstrap-iso">
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-sm-4 col-sm-offset-4 bg-info col-xs-12">
+
+    <!-- Form code begins -->
+    <form method="post">
+	
+		<!-- Imie -->
+		
+		<div class="form-group ">
+      <label class="control-label requiredField" for="name">
+       Imię
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+          <span class="glyphicon glyphicon-remove"></span>
+       </div>
+       <input class="form-control" id="name" name="name" placeholder="Imię" type="text"/>
+      </div>
+     </div>
+	
+	
+	
+	<!-- email -->
+		
+		<div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       Email
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+          <span class="glyphicon glyphicon-remove"></span>
+       </div>
+       <input class="form-control" id="email" name="email" placeholder="Email" type="text"/>
+      </div>
+     </div>
+	
+	
+	
+	
+	<!-- hasło -->
+		
+		<div class="form-group ">
+      <label class="control-label requiredField" for="password">
+       Hasło
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+          <span class="glyphicon glyphicon-remove"></span>
+       </div>
+       <input class="form-control" id="password" name="password" placeholder="Hasło" type="password"/>
+      </div>
+     </div>
+	
+	
+	
+	
+	
+	
+		<!-- Data -->
+	
+      <div class="form-group"> 
+	  
+		<label class="control-label requiredField" for="date">
+			Data urodzenia
+        
+        </label>
+	  
+	  <div class="input-group">
+       <div class="input-group-addon">
+          
+       </div>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+      </div>
+	  
+     
+       
+		
+      </div>
+	  
+	  
+	  
+	  <!-- Submit button -->
+	  
+      <div class="form-group"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+      </div>
+     </form>
+     <!-- Form code ends --> 
+
+    </div>
+  </div>    
+ </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	var matchRule = {
+	email: RegExp(/^(.[A-Za-z0-9\-]*\w)+@+([A-Za-z0-9\-]*\w)+(\.[A-Za-z]*\w)+$/),
+	password: RegExp(/^(?=.*[A-Za-ząćęłńóśźżĄĘŁŃÓŚŹŻ\d])\w{4,}$/),
+	name: RegExp(/^(?=.*[A-Za-ząćęłńóśźżĄĘŁŃÓŚŹŻ\d])\w{2,}$/)
+	}; 
+	  
+	  
+	  
+	var $elForm = $('form');
+	$elForm.on('keypress submit', function(e){
+	switch(e.type) {
+		case 'keypress':
+				var $elInput = $(e.target); 
+				var inputText = $elInput.val();
+				var inputType = $elInput.attr('name');
+				var $elMessageIcon = $elInput.prev().children('span');
+	
+				var result = inputText.match(matchRule[inputType]);
+				if (result == null) {	
+					$elMessageIcon.removeClass('glyphicon-ok');
+					$elMessageIcon.addClass('glyphicon-remove');
+				}
+				else {
+					$elMessageIcon.removeClass('glyphicon-remove');
+					$elMessageIcon.addClass('glyphicon-ok');
+				}
+				
+				
+				
+		break;
+		case 'submit':
+				var $messagesList = $(e.currentTarget).find('span');
+				$messagesList.each(function(){
+					if($(this).hasClass('glyphicon-remove')) {
+					//$(e.currentTarget).children('p').text('Niepoprawne lub nie kompletne dane.');
+					e.preventDefault();
+					}	
+				});
+		break;
+	}
+}); 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    })
+</script>
+
+</body>
+</html>
